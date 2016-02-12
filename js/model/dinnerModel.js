@@ -57,9 +57,9 @@ var DinnerModel = function() {
 
 	//Removes dish from menu
 	this.removeDishFromMenu = function(id) {
-		for (dish in this.menu){
-			if(dish.id == id){
-				this.menu.pop(dish);
+		for (a in this.menu){
+			if(this.menu[a].id == id){
+				this.menu = this.menu.slice(a);
 			}
 			
 		}
